@@ -1,47 +1,3 @@
-<style>
-.coments-wrap h3 {
-    padding-bottom: 15px;
-    padding-top: 10px;
-    font-weight: bold!important;
-}
-
-.coments-wrap td {
-    text-align: center;
-    vertical-align: middle;
-    padding: 10px;
-    font-size: 14px;
-}
-
-.coments-wrap table tr:nth-child(2n-1) {
-    background: #D8D6D6;
-}
-
-.coments-wrap thead tr {
-    background: #444444!important;
-    color: white;
-}
-
-.coments-wrap img {
-    width: 50px;
-}
-
-input#ret {background: #444444;border: 0;transition: 0.2s;margin-top: 20px;display: block;margin-right: 0;width: 100px;margin-left: auto;padding: 10px;color: white;text-transform: uppercase;border-radius: 4px;font-size: 16px;}
-
-input#ret:hover {
-    background: #D8D6D6;
-    color: #444444;
-    box-shadow: 0px 0px 3px #444444;
-}
-td#add_text textarea {
-    height: 100px;
-    width: 500px;
-    padding: 5px;
-}
-
-.add_com input {
-    padding: 5px;
-}
-</style>
 <?php print_r($ret); ?>
 <?php print_r($ok); ?>
 <?php print_r($success); ?>
@@ -67,7 +23,7 @@ td#add_text textarea {
       <button type="button" class="close" data-dismiss="alert">&times;</button>
     </div>
     <?php } ?>
-	<div class="panel panel-default coments-wrap">
+	<div class="panel panel-default mvps-wrap">
       <div class="panel-heading">
         <h3 class="panel-title"><?php echo $table_header; ?></h3>
 		<table style="width: 100%;">
@@ -117,10 +73,10 @@ td#add_text textarea {
 							</div>
 						</td>
 						<td id="add_text"><textarea type="text" name="text"></textarea></td>
-						
+
 					</tr>
 				</tbody>
-			</table>			
+			</table>
 			<input type="submit" id="ret" value="add"/>
 		</div>
 		<form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="form-account" class="form-horizontal">
@@ -140,7 +96,7 @@ td#add_text textarea {
           </div>
         </form>
 		<script type="text/javascript"><!--
-		
+
 	$('.comments-edit').click(function(){
 		tr = $(this).parents('tr');
 		temp_id = tr.find('.comment-id').html();
@@ -165,11 +121,11 @@ td#add_text textarea {
 			console.log(gems);
 		},
 		error: function (json) {
-			console.log(json);		
+			console.log(json);
 		},
 		success: function(json) {
-			console.log(json);		
-			location.reload();			
+			console.log(json);
+			location.reload();
 		}
 	});
 		return false;
@@ -186,18 +142,18 @@ td#add_text textarea {
 			},
 			error: function (json) {
 				console.log('error');
-			console.log(json);		
+			console.log(json);
 			},
 			success: function(json) {
 				console.log('added');
-				console.log(json);		
-			location.reload();			
+				console.log(json);
+			location.reload();
 			}
 		});
 		return false;
 	});
 //--></script>
-		
+
       </div>
       <div class="panel-body">
 	  </div>
