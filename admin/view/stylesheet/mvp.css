@@ -1,0 +1,42 @@
+.mvps-wrap h3 {
+    padding-bottom: 15px;
+    padding-top: 10px;
+    font-weight: bold!important;
+}
+
+.mvps-wrap td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.mvps-wrap table tr:nth-child(2n-1) {
+    background: #D8D6D6;
+}
+
+.mvps-wrap thead tr {
+    background: #444444!important;
+    color: white;
+}
+
+.mvps-wrap img {
+    width: 50px;
+}
+
+input#ret {background: #444444;border: 0;transition: 0.2s;margin-top: 20px;display: block;margin-right: 0;width: 100px;margin-left: auto;padding: 10px;color: white;text-transform: uppercase;border-radius: 4px;font-size: 16px;}
+
+input#ret:hover {
+    background: #D8D6D6;
+    color: #444444;
+    box-shadow: 0px 0px 3px #444444;
+}
+td#add_text textarea {
+    height: 100px;
+    width: 500px;
+    padding: 5px;
+}
+
+.add_com input {
+    padding: 5px;
+}
